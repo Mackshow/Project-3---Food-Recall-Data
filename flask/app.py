@@ -24,6 +24,8 @@ base.prepare(engine, reflect=True)
 #Save references to each table
 reactions= base.classes.reactions
 prooducts= base.classes.products
+customers= base.classes.customers
+outcomes= base.classes.outcomes
 
 #Create our session from Python to the DB
 session = Session(engine)
