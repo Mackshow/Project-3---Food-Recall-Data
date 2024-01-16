@@ -1,0 +1,239 @@
+Product Name,Industry Type,Gender,age,Reactions,Outcome
+PURITAN'S PRIDE SAW PALMETTO,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,68.0,['Prostate cancer'],['Hospitalization']
+EXEMPTION 4,Cosmetics,Male,,['Ovarian cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Ovarian cancer'],['Other Serious or Important Medical Event']
+PRESERVISION LUTEIN,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,89.0,"['Blindness', 'Macular degeneration', 'Throat cancer']",['Other Serious or Important Medical Event']
+NATURE'S ORIGIN PROSTA PRIME SAW PALMETTO COMPLEX,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,73.0,"['Micturition urgency', 'Prostate cancer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+Puritan Pride Supplement,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,73.0,"['Micturition urgency', 'Prostate cancer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+CENTRUM SILVER MEN'S 50+,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,79.0,"['Bladder cancer', 'Extrasystoles', 'Hypertension']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,85.0,['Gastric cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,85.0,['Gastric cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,85.0,['Gastric cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,85.0,['Gastric cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,57.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event']"
+EXEMPTION 4,Cosmetics,Male,,"['Application site rash', 'Skin cancer']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Adenosquamous cell lung cancer stage III', 'Exposure to chemical pollution']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Adenosquamous cell lung cancer stage III', 'Exposure to chemical pollution']",['Other Serious or Important Medical Event']
+PRESERVISION AREDS 2 FORMULA,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Dysphagia', 'Throat cancer']",['Other Serious or Important Medical Event']
+SAW PALMETTO 450MG RAPID RELEASE CAPSULES,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,"['Prostate cancer', 'Prostatomegaly', 'Urinary tract disorder']",['Other Serious or Important Medical Event']
+UNSPECIFIED VITAMIN C,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,"['Prostate cancer', 'Prostatomegaly', 'Urinary tract disorder']",['Other Serious or Important Medical Event']
+PURITAN'S PRIDE 3X STRENGTH JOINT SOOTHER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE OMEGA 3 FISH OIL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE NATURAL E-400 IU,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE MEGA B-50 COMPLEX VITAMIN,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE LYCOPENE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE HIGH POTENCY SELENIUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE ECHINACEA,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+PURITAN'S PRIDE ABSORBABLE SELENIUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,87.0,"['Bladder cancer', 'Dementia', 'Urinary tract infection']","['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+CENTRUM SILVER MEN'S 50+,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Hepatic cancer'],['Other Serious or Important Medical Event']
+PURITAN’S PRIDE WHOLE HERB SAW PALMETTO,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Prostate cancer'],"['Other Serious or Important Medical Event', 'Visited a Health Care Provider', 'Other Serious Outcome']"
+ONE A DAY ESSENTIAL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Bladder cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE ACIDOPHILUS COMPLEX,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+Vitamin D1,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+Vitamin B1,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+Fish oil,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE TRIPLE STRENGTH L-CARNITINE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE SUPER STRENGTH CLA,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE POTASSIUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.0,['Renal cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE FLOW GUARD SAW PALMETTO,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+vitamin E,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+vitamin D3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+vitamin C,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+selenium,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+multivitamin,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE SAW PALMETTO,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],"['Hospitalization', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+CENTRUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Bladder disorder', 'Prostate cancer']",['Other Serious or Important Medical Event']
+PURITAN'S PRIDE VITAMIN D3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Metastasis', 'Prostate cancer']","['Life Threatening', 'Other Serious or Important Medical Event']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,80.0,"['Foreign body in throat', 'Throat cancer']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+PRESERVISION AREDS 2 FORMULA SOFT GELS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Hepatic cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,65.0,['Ovarian cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,65.0,['Ovarian cancer'],['Other Serious or Important Medical Event']
+CITRACAL 250 MG + D,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+VITAMIN D3 (COLECALCIFEROL),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+TOCOPHEROL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+OMEGA 3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+FISH OIL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+COLECALCIFEROL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+CALCIUM (CALCIUM),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Constipation', 'Metastases to bone', 'Pain', 'Prostate cancer stage IV']",['Other Serious or Important Medical Event']
+SHEER STRENGTH LABS SHEER PRE WORKOUT SUPPLEMENT - COTTON CANDY,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,32.0,['Lip and/or oral cavity cancer'],['Other Serious or Important Medical Event']
+Multivitamin,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,32.0,['Lip and/or oral cavity cancer'],['Other Serious or Important Medical Event']
+SUPER BETA PROSTATE P3 ADVANCED,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,67.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+CALTRATE 600 + D PLUS MINERAL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Testis cancer'],['Other Serious or Important Medical Event']
+GNC SLIMVANCE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,37.0,['Renal cancer'],['Other Outcome']
+BIOSCHWARTZ OMEGA 3 FISH OIL,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,50.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+BIOTRUST IC-5,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,60.0,"['Back pain', 'Renal cancer']",['Hospitalization']
+PURITANS PRIDE GYMNEMASYLVESTRE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Colon cancer stage IV', 'Cough', 'Hepatic cancer stage IV', 'Lung carcinoma cell type unspecified stage IV']","['Hospitalization', 'Visited a Health Care Provider']"
+SUPPLEMENTS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Colon cancer stage IV', 'Cough', 'Hepatic cancer stage IV', 'Lung carcinoma cell type unspecified stage IV']","['Hospitalization', 'Visited a Health Care Provider']"
+PURITANS PRIDE YEAST FREE CHROMIUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Colon cancer stage IV', 'Cough', 'Hepatic cancer stage IV', 'Lung carcinoma cell type unspecified stage IV']","['Hospitalization', 'Visited a Health Care Provider']"
+PURITANS PRIDE VANADYL SULFATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Colon cancer stage IV', 'Cough', 'Hepatic cancer stage IV', 'Lung carcinoma cell type unspecified stage IV']","['Hospitalization', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE SAW PALMETTO EXTRACT,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Life Threatening', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+other supplements,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Life Threatening', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+Niacin,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Life Threatening', 'Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+CENTRUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Bladder cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Prostate cancer']",['Death']
+EXEMPTION 4,Cosmetics,Male,78.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,78.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Testis cancer']","['Death', 'Other Serious or Important Medical Event']"
+EXEMPTION 4,Cosmetics,Male,76.0,"['Atelectasis', 'Cough', 'Dyspnoea', 'Exposure to chemical pollution', 'Lung cancer metastatic', 'Pleural effusion', 'Squamous cell carcinoma']",['Other Serious or Important Medical Event']
+DAILY HARVEST FRENCH THYME AND LEEK CRUMBLES,Vegetables/Vegetable Products,Male,42.2,"['Chest pain', 'Gastric cancer', 'Helicobacter gastritis']",['Disability']
+Multi-vitamins,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,42.2,"['Chest pain', 'Gastric cancer', 'Helicobacter gastritis']",['Disability']
+turmeric supplement,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,42.2,"['Chest pain', 'Gastric cancer', 'Helicobacter gastritis']",['Disability']
+THERAVITE WITH MINERALS 2008,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Constipation', 'Faeces discoloured', 'Faeces hard', 'Full blood count decreased', 'Internal haemorrhage', 'Prostate cancer', 'Rash']","['Hospitalization', 'Other Serious or Important Medical Event']"
+EXEMPTION 4,Cosmetics,Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+SUPER BETA PROSTATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Prostate cancer', 'Prostatomegaly']",['Other Serious Outcome']
+PURITAN'S PRIDE ABC PLUS SENIOR MULTI,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE ULTRA MAN 50 PLUS DAILY MULTI,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE TIMED RELEASE C-TIME 1000 WITH BIOFLAVANOIDS AND WILD ROSE HIPS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE SUPER C-1000 COMPLEX,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Prostate cancer'],"['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,96.0,"['Blindness', 'Deafness', 'Death', 'Dysphagia', 'Oropharyngeal scar', 'Pneumonia aspiration', 'Skin cancer']","['Death', 'Other Serious or Important Medical Event']"
+EXEMPTION 4,Cosmetics,Male,61.0,"['Death', 'Injury', 'Ovarian cancer']","['Death', 'Other Serious or Important Medical Event']"
+EXEMPTION 4,Cosmetics,Male,61.0,"['Death', 'Injury', 'Ovarian cancer']","['Death', 'Other Serious or Important Medical Event']"
+NUTRITIONAL CONCEPTS BACOPA LEAF EXTRACT 500MG CAPSULES,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Zinc,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Vitamin E,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Vitamin D,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Vitamin B-12,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Vitamin A,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Selenium,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Psyllium Fiber,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Omega-3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Mega B-50 Complex,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+L-Glutamine,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Ester-C,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Co-enzyme Q10,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+Calcium Complex with Magnesium,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+PURITAN’S PRIDE HYDROLYZED COLLAGEN TYPE I AND III COLLAGEN CAPLETS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Rectal cancer'],['Other Serious Outcome']
+NORTH STAR BENVIA GOLD,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Prostate cancer', 'Prostatic specific antigen increased']",['Life Threatening']
+NORTH STAR PROTEVA PLUS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Prostate cancer', 'Prostatic specific antigen increased']",['Life Threatening']
+NORTH STAR PEAK ADRENAL X6,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Prostate cancer', 'Prostatic specific antigen increased']",['Life Threatening']
+NORTH STAR OCUXANTHIN,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Prostate cancer', 'Prostatic specific antigen increased']",['Life Threatening']
+PRESERVISION AREDS 2 FORMULA SOFT GELS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Bladder cancer'],['Other Serious or Important Medical Event']
+CENTRUM SILVER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Prostate cancer'],['Other Serious or Important Medical Event']
+BLADDER CONTROL ADVANTAGE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Pollakiuria', 'Prostate cancer', 'Urinary incontinence']","['Hospitalization', 'Visited a Health Care Provider']"
+"PURITAN'S PRIDE BETA-CAROTENE PROVITAMIN A 3,000MCG (10,000IU) RAPID RELEASE SOFTGELS",Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Zinc 50mg,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Vitamin D3 5000 IU,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Vitamin C,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Vitamin B-12,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Turmeric 800mg,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Red Krill Oil 1000mg (170mg Active Omega-3),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Potassium,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Pomegranate,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Lycopene,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Lutein 40mg,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Green Tea Standardized Extract 315mg,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Flax Oil,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Elderberry Sambucus 1250mg,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Cranberry 2500mg,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Cinnamon,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+Calcium,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,66.0,['Prostate cancer'],['Other Serious Outcome']
+EXEMPTION 4,Cosmetics,Male,76.0,"['Exposure to chemical pollution', 'Lung cancer metastatic']",['Other Serious or Important Medical Event']
+SUPER BETA PROSTATE P3 ADVANCED,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Prostate cancer'],['Hospitalization']
+EXEMPTION 4,Cosmetics,Male,86.0,"['Death', 'Exposure to chemical pollution', 'Laryngeal cancer']","['Death', 'Other Serious or Important Medical Event']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,57.0,"['Abdominal discomfort', 'Gastrointestinal cancer metastatic', 'Helicobacter infection', 'Macular degeneration']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+EXEMPTION 4,Cosmetics,Male,40.0,['Ovarian cancer stage III'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,40.0,['Ovarian cancer stage III'],['Other Serious or Important Medical Event']
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,82.0,"['Arthropod bite', 'Pain of skin', 'Skin cancer']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,85.0,"['Bladder cancer', 'Chest pain', 'Choking', 'Dyspepsia', 'Throat irritation']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Prostate cancer']","['Death', 'Other Serious or Important Medical Event']"
+JOHNSON BABY POWDER,Cosmetics,Male,80.0,"['Death', 'Penile cancer']",['Death']
+EXEMPTION 4,Cosmetics,Male,29.0,['Thyroid cancer'],['Other Outcome']
+PRESERVISION AREDS 2 FORMULA SOFT GELS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,85.0,"['Dysphagia', 'Head and neck cancer', 'Macular degeneration']",['Other Serious or Important Medical Event']
+CENTRUM SILVER MEN'S 50+,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,64.0,"['Colon cancer', 'Prostate cancer', 'Weight increased']","['Hospitalization', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Prostate cancer']",['Death']
+SUPER BETA PROSTATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Prostate cancer'],"['Other Serious or Important Medical Event', 'Other Serious Outcome']"
+COCA COLA,Soft Drink/Water,Male,49.0,"['Abdominal pain upper', 'Gastric cancer', 'Intestinal obstruction']","['Life Threatening', 'Hospitalization', 'Disability', 'Visited Emergency Room']"
+PURITANS PRIDE BILBERRY FRUIT EXTRACT,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,78.0,"['Cerebrovascular accident', 'Chronic obstructive pulmonary disease', 'Coeliac disease', 'Eye disorder', 'Fluid retention', 'Gastrointestinal disorder', 'Myocardial infarction', 'Pain', 'Renal impairment', 'Skin cancer', 'Ulcer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+GARLIC AND PARSLEY,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,78.0,"['Cerebrovascular accident', 'Chronic obstructive pulmonary disease', 'Coeliac disease', 'Eye disorder', 'Fluid retention', 'Gastrointestinal disorder', 'Myocardial infarction', 'Pain', 'Renal impairment', 'Skin cancer', 'Ulcer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+PURITANS PRIDE ECHINACEA GOLDENSEAL ROOT,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,78.0,"['Cerebrovascular accident', 'Chronic obstructive pulmonary disease', 'Coeliac disease', 'Eye disorder', 'Fluid retention', 'Gastrointestinal disorder', 'Myocardial infarction', 'Pain', 'Renal impairment', 'Skin cancer', 'Ulcer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+PURITANS PRIDE C-1000MG W/PROTECTIVE BIOFLAVONOID & WILD ROSE HIP CAP,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,78.0,"['Cerebrovascular accident', 'Chronic obstructive pulmonary disease', 'Coeliac disease', 'Eye disorder', 'Fluid retention', 'Gastrointestinal disorder', 'Myocardial infarction', 'Pain', 'Renal impairment', 'Skin cancer', 'Ulcer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+PURITANS PRIDE MEGA VITA GEL RAPID RELEASE SOFTGELS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,68.0,['Colorectal cancer'],"['Other Serious or Important Medical Event', 'Other Serious Outcome']"
+EXEMPTION 4,Cosmetics,Male,78.0,"['Death', 'Exposure to chemical pollution', 'Non-small cell lung cancer stage IV']","['Death', 'Other Serious or Important Medical Event']"
+SUPER BETA PROSTATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,75.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+SUVIDA ESSENTIAL SILVER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,72.0,"['Bladder cancer', 'Death', 'Hydronephrosis', 'Metastases to bone', 'Urinary tract infection', 'Urinary tract obstruction']","['Death', 'Life Threatening', 'Hospitalization', 'Disability', 'Visited Emergency Room', 'Visited a Health Care Provider']"
+PURITAN’S PRIDE VITAMIN E,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Head and neck cancer'],"['Life Threatening', 'Other Serious Outcome']"
+UNSPECIFIED SUPPLEMENTS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Head and neck cancer'],"['Life Threatening', 'Other Serious Outcome']"
+CENTRUM MULTIGUMMIES MEN 50+,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,56.0,"['Dyspepsia', 'Skin cancer']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Testis cancer']","['Death', 'Other Serious or Important Medical Event']"
+PURITAN’S PRIDE FLOW GUARD SAW PALMETTO,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,79.0,['Prostate cancer'],['Other Serious Outcome']
+PURITAN’S PRIDE TRIBULUS TERRESTRIS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,79.0,['Prostate cancer'],['Other Serious Outcome']
+EXEMPTION 4,Cosmetics,Male,9.0,['Brain cancer metastatic'],['Other Outcome']
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Prostate cancer']","['Death', 'Other Serious or Important Medical Event']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,86.0,"['Bladder cancer', 'Bladder mass', 'Blood urine present']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+CENTRUM SILVER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,86.0,"['Bladder cancer', 'Bladder mass', 'Blood urine present']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+SUPER BETA PROSTATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,79.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+GREEN LUMBER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,71.5,['Prostate cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE 3X STRENGTH JOINT SOOTHER GLUCOSAMINE CHONDR MSM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE VITAMIN D3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE VITAMIN B6,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE VITAMIN B-12,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE TIMED RELEASE C-TIME 1000 WITH BIOFLAVONOIDS AND WILD ROSE HIPS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE ODORLESS GARLIC,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE MEGA B-50 COMPLEX VITAMIN,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE ECHINACEA,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PURITAN'S PRIDE CALCIUM MAGNESIUM VITAMIN D3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,88.0,"['Colon cancer', 'Malaise', 'Metastases to liver']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,65.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Exposure to chemical pollution', 'Gastric cancer']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+EXEMPTION 4,Cosmetics,Male,,"['Exposure to chemical pollution', 'Gastric cancer']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+CENTRUM SILVER MEN'S 50+,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,80.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+NESTLE SPLASH BLAST ACIA GRAPE WATER,Soft Drink/Water,Male,,['Lip and/or oral cavity cancer'],['Other Serious or Important Medical Event']
+CENTRUM SILVER MEN'S 50+,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,80.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,84.0,"['Chest pain', 'Mesothelioma', 'Non-small cell lung cancer stage IV', 'Pulmonary mass']",['Other Serious or Important Medical Event']
+NATURE'S NONI / PROPRIETARY BLEND,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,58.0,"['Death', 'Laryngeal cancer', 'Malaise', 'Nausea', 'Vomiting']",['Death']
+PAW PAW CELL-REG / ACETOGENINS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,58.0,"['Death', 'Laryngeal cancer', 'Malaise', 'Nausea', 'Vomiting']",['Death']
+NSP TCM NEGATIVE PACK / ACETOGENINS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,58.0,"['Death', 'Laryngeal cancer', 'Malaise', 'Nausea', 'Vomiting']",['Death']
+PURITAN'S PRIDE VITAMIN C AND ZINC MICROLOZENGES,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE VITAMIN B-12 MICROLOZENGES,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE PROBIOTIC ACIDOPHILUS,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE POMEGRANATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE L-CARNITINE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE GRAPESEED EXTRACT,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE GINGER ROOT,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE DOUBLE STRENGTH GLUCOSAMINE CHONDROITIN MSM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE CRANBERRY,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE COQ-10,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE COQ-10,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE ABSORBABLE SELENIUM,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE ZINC,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+PURITAN'S PRIDE VITAMIN D3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,76.0,"['Bladder cancer', 'Blood urine present', 'Cerebrovascular accident', 'Hypoaesthesia', 'Paralysis']","['Hospitalization', 'Disability', 'Other Serious or Important Medical Event', 'Visited Emergency Room']"
+EXEMPTION 4,Cosmetics,Male,,"['Bladder cancer', 'Prostate cancer']",['Other Serious or Important Medical Event']
+PURITAN'S PRIDE 3X STRENGTH JOINT SOOTHER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Cardiac disorder', 'Prostate cancer']","['Other Serious or Important Medical Event', 'Visited a Health Care Provider']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,78.0,"['Joint swelling', 'Local swelling', 'Prostate cancer']",['Other Serious or Important Medical Event']
+SUPER BETA PROSTATE P3 ADVANCED,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Colon cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,70.0,['Prostate cancer'],['Other Serious or Important Medical Event']
+JOHNSONS POWDER NO UPC,Cosmetics,Male,73.0,['Colon cancer'],"['Life Threatening', 'Hospitalization', 'Other Serious or Important Medical Event']"
+EXEMPTION 4,Cosmetics,Male,,"['Death', 'Hepatic cancer', 'Lung neoplasm malignant']","['Death', 'Other Serious or Important Medical Event']"
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,72.0,['Renal cancer'],['Other Serious or Important Medical Event']
+VITAMIN B12 (CYANOCOBALAMIN),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,72.0,['Renal cancer'],['Other Serious or Important Medical Event']
+IRON,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,72.0,['Renal cancer'],['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,57.0,['Ovarian cancer'],"['Hospitalization', 'Other Serious or Important Medical Event']"
+NATURES BOUNTY GENTLE IRON,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,77.0,"['Bone cancer', 'Condition aggravated', 'International normalised ratio fluctuation', 'Renal failure', 'Transfusion', 'Unevaluable event', 'Weight decreased']",['Other Serious or Important Medical Event']
+MULTIVITAMIN (DIETARY SUPPLEMENT),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,77.0,"['Bone cancer', 'Condition aggravated', 'International normalised ratio fluctuation', 'Renal failure', 'Transfusion', 'Unevaluable event', 'Weight decreased']",['Other Serious or Important Medical Event']
+FOLIC ACID,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,77.0,"['Bone cancer', 'Condition aggravated', 'International normalised ratio fluctuation', 'Renal failure', 'Transfusion', 'Unevaluable event', 'Weight decreased']",['Other Serious or Important Medical Event']
+FERROUS GLUCONATE (DIETARY Supplement,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,77.0,"['Bone cancer', 'Condition aggravated', 'International normalised ratio fluctuation', 'Renal failure', 'Transfusion', 'Unevaluable event', 'Weight decreased']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,['Colon cancer'],['Other Serious or Important Medical Event']
+SUPER BETA PROSTATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,83.0,"['Prostate cancer', 'Prostatic specific antigen increased']",['Other Serious or Important Medical Event']
+PURITANS PRIDE K-2 BIOACTIVE FORM EASY TO SWALLOW,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,72.0,"['Peripheral vascular disorder', 'Prostate cancer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+PURITANS PRIDE VITAMIN E,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,72.0,"['Peripheral vascular disorder', 'Prostate cancer']","['Hospitalization', 'Other Serious or Important Medical Event']"
+EMERGEN-C SUPER ORANGE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,['Skin cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE B-COMPLEX AND B-12,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Bladder cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE VITAMIN E,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Bladder cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE SUPER ANTIOXIDANT,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Bladder cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE MEGA POTENCY VITAMIN D3,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Bladder cancer'],['Other Serious or Important Medical Event']
+PURITAN'S PRIDE LYCOPENE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,69.0,['Bladder cancer'],['Other Serious or Important Medical Event']
+CENTRUM LIQUID,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,56.0,['Colon cancer stage III'],"['Hospitalization', 'Visited a Health Care Provider']"
+VITAMIN D3 (COLECALCIFEROL),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,56.0,['Colon cancer stage III'],"['Hospitalization', 'Visited a Health Care Provider']"
+VITAMIN B 6 (PYRIDOXINE HYDROCHLORIDE),Vit/Min/Prot/Unconv Diet(Human/Animal),Male,56.0,['Colon cancer stage III'],"['Hospitalization', 'Visited a Health Care Provider']"
+IRON,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,56.0,['Colon cancer stage III'],"['Hospitalization', 'Visited a Health Care Provider']"
+EXEMPTION 4,Cosmetics,Male,65.0,"['Death', 'MESOTHELIOMA', 'Ovarian cancer']",['Death']
+SUPER BETA PROSTATE,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Polyuria', 'Prostate cancer', 'Urinary tract infection']","['Hospitalization', 'Other Serious or Important Medical Event']"
+PRESERVISION AREDS 2 FORMULA,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,74.0,"['Hepatic enzyme increased', 'Liver function test abnormal', 'Prostate cancer metastatic']",['Other Serious or Important Medical Event']
+EXEMPTION 4,Cosmetics,Male,,"['Colon cancer', 'Death']","['Death', 'Other Serious or Important Medical Event']"
+CENTRUM SILVER,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,84.0,"['Eye disorder', 'Hearing impaired', 'Prostate cancer']",['Other Serious or Important Medical Event']
+PRESERVISION AREDS 2,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,,"['Abdominal pain upper', 'Gastric cancer']",['Other Serious or Important Medical Event']
+PURITANS PRIDE EXTRA STRENGTH PROSTA-METTO SAW PALMETTO COMPLEX,Vit/Min/Prot/Unconv Diet(Human/Animal),Male,70.0,"['Prostate cancer', 'Prostatic specific antigen increased']",['Other Serious or Important Medical Event']
