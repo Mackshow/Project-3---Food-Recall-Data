@@ -27,8 +27,13 @@ Highcharts.chart('container', {
     },
 
     yAxis: {
-        visible: false
-    },
+        visible: false,
+        stackShadow: {
+            enabled: true,
+            
+            }
+          },
+    
 
     legend: {
         align: 'botton',
@@ -42,7 +47,7 @@ Highcharts.chart('container', {
     },
     tooltip: {
         headerFormat: '',
-        valueSuffix: ' K'
+        valueSuffix: ' %'
     },
 
     plotOptions: {
@@ -53,7 +58,7 @@ Highcharts.chart('container', {
             dataLabels: {
                 enabled: true,
                 align: 'center',
-                format: '{y} K'
+                format: '{y} %'
             },
             stacking: 'percent',
             paths: [{
