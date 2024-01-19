@@ -1,61 +1,116 @@
 import sqlite3
 
-# Connect to SQLite database (creates a new database if it doesn't exist)
-conn = sqlite3.connect('foodReactions.db')
+# Connect to SQLite database (or create if not exists)
+conn = sqlite3.connect('foodReaction.db')
 cursor = conn.cursor()
+ 
+# Create ReactionsTypes table
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS ReactionsTypes (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ReactionTypeName VARCHAR(150) NOT NULL
+    
+)
+''')
+
+# Create Reactions table
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Reactions (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ReactionTypeID INTEGER NOT NULL,
+    FoodReactionID INTEGER NOT NULL,
+    
+    FOREIGN KEY (ReactionTypeID) REFERENCES ReactionsTypes (ID),
+    FOREIGN KEY (FoodReactionID) REFERENCES FoodReactions (ID)
+)
+''')
+
+# Create OutcomesTypes table
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS OutcomesTypes (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    OutcomeTypeName VARCHAR(150) NOT NULL
+    
+)
+''')
+
+# Create Outcomes table
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Outcomes (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    OutcomesTypeID INTEGER NOT NULL,
+    FoodReactionID INTEGER NOT NULL,
+    FOREIGN KEY (OutcomesTypeID) REFERENCES OutcomesTypes (ID),
+    FOREIGN KEY (FoodReactionID) REFERENCES FoodReactions (ID)
+)
+''')
+
+# Create Products table
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Products (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    IndustryNameID INTEGER NOT NULL,
+    BrandID INTEGER NOT NULL,
+    RoleID INTEGER NOT NULL,
+    FoodReactionID INTEGER NOT NULL,
+    FOREIGN KEY (IndustryNameID) REFERENCES IndustryNames (ID),
+    FOREIGN KEY (BrandID) REFERENCES Brands (ID),
+    FOREIGN KEY (RoleID) REFERENCES Roles (ID),
+    FOREIGN KEY (FoodReactionID) REFERENCES FoodReactions (ID)
+)
+''')
 
 # Create FoodReactions table
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS FoodReactions (
-        ReportNumber VARCHAR(25) NOT NULL,
-        DateCreated DATE NOT NULL,
-        DateStarted DATE,
-        PRIMARY KEY (ReportNumber)
-    );
+CREATE TABLE IF NOT EXISTS FoodReactions (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ReportNumber VARCHAR(25) NOT NULL,
+    DateCreated VARCHAR(20)  ,
+    DateStarted VARCHAR(20)  ,
+    consumerID INTEGER  ,
+    FOREIGN KEY (consumerID) REFERENCES Consumers (ID)
+)
 ''')
 
-# Create Reactions table with foreign key constraint
+# Create Consumers table
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Reactions (
-        ReportNumber VARCHAR(25) NOT NULL,
-        Reactions VARCHAR(500) NOT NULL,        
-        FOREIGN KEY (ReportNumber) REFERENCES FoodReactions (ReportNumber)
-    );
+CREATE TABLE IF NOT EXISTS Consumers (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Age INTEGER  ,
+    AgeUnit VARCHAR(20)  ,
+    Gender VARCHAR(10) 
+)
 ''')
 
-# Create Consumer table with foreign key constraint
+# Create IndustryNames table
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Consumer (
-        ReportNumber VARCHAR(25) NOT NULL,
-        Age INTEGER,
-        AgeUnit VARCHAR(20), 
-        Gender VARCHAR(20),        
-        FOREIGN KEY (ReportNumber) REFERENCES FoodReactions (ReportNumber)
-    );
+CREATE TABLE IF NOT EXISTS IndustryNames (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    IndustryCode INTEGER NOT NULL,
+    IndustryName VARCHAR(100) NOT NULL
+)
 ''')
 
-# Create Products table with foreign key constraint
+# Create Brands table
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Products (
-        ReportNumber VARCHAR(25) NOT NULL,
-        Role VARCHAR(50) NOT NULL,
-        NameBrand VARCHAR(255) NOT NULL,
-        IndustryCode INTEGER NOT NULL,
-        IndusteryName VARCHAR(255) NOT NULL,        
-        FOREIGN KEY (ReportNumber) REFERENCES FoodReactions (ReportNumber)
-    );
+CREATE TABLE IF NOT EXISTS Brands (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    BrandName VARCHAR(150) NOT NULL
+)
 ''')
 
-# Create Outcomes table with foreign key constraint
+# Create Roles table
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Outcomes (
-        ReportNumber VARCHAR(25) NOT NULL,
-        Outcome VARCHAR(150) NOT NULL,        
-        FOREIGN KEY (ReportNumber) REFERENCES FoodReactions (ReportNumber)
-    );
+CREATE TABLE IF NOT EXISTS Roles (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    RoleName VARCHAR(100) NOT NULL
+)
 ''')
 
-# Commit changes and close the connection
+# Commit changes and close connection
 conn.commit()
 conn.close()
-print("executed successfully")
+
+print("SQLite database and tables created successfully.")
+
+
