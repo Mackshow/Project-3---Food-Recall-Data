@@ -1,66 +1,114 @@
 import sqlite3
 import json
+from datetime import datetime
+# Connect to SQLite database
+conn = sqlite3.connect('foodReaction.db')
+cursor = conn.cursor()
 
-def create_connection():
-    # Connect to SQLite database
-    conn = sqlite3.connect('foodReactions.db')
-    return conn
+# Load JSON data from a file 
+with open('food-event-0001-of-0001.json', 'r') as json_file:
+    data = json.load(json_file)
+ 
+default_consumer={"consumer": {"age": "0","age_unit": "-", "gender": "-" }}
+# Loop through each record in the JSON data
+for record in data['results']:
+    print('record:', record)
+    # Insert into Consumers table
+    consumer_id = None
+    if record.get('consumer', default_consumer ):
+        cursor.execute(f'SELECT ID FROM Consumers WHERE Age =? and AgeUnit=? and Gender = ?',
+                        (record['consumer'].get('age',''), record['consumer'].get('age_unit',''), record['consumer'].get('gender',''),))
+        result = cursor.fetchone()
+        if result:
+            print('consumer active selection : ', result) #debugging
+            consumer_id= result[0]
+        else:  
+            print('consumer insertion:>>') #debugging
+            cursor.execute('''
+                INSERT INTO Consumers (Age, AgeUnit, Gender) VALUES (?, ?, ?)
+            ''', (record['consumer'].get('age',0), record['consumer'].get('age_unit','-'), record['consumer'].get('gender','-')))
+            conn.commit()
+            consumer_id = cursor.lastrowid
+            
+    #debugging
+    print('--> age:',record['consumer'].get('age',0), ', unit:',record['consumer'].get('age_unit','-'), ', gender:',record['consumer'].get('gender','-'), ',id:',consumer_id)
+    print('--->report number: ',record.get('report_number','-'), record.get('date_created',''), record.get('date_started',''), consumer_id)
 
-def insert_data(conn, data):
-    cursor = conn.cursor()
-
-    # Insert data into FoodReactions table
+    # Insert into FoodReactions table
     cursor.execute('''
-        INSERT INTO FoodReactions (ReportNumber, DateCreated, DateStarted)
-        VALUES (?, ?, ?)
-    ''', (data['report_number'], data['date_created'], data['date_started']))
-
-    report_number = data['report_number']
-
-    # Insert data into Reactions table
-    for reaction in data['reactions']:
-        cursor.execute('''
-            INSERT INTO Reactions (ReportNumber, reactions)
-            VALUES (?, ?)
-        ''', (report_number, reaction))
-
-    # Insert data into Consumer table
-    consumer_data = data['consumer']
-    cursor.execute('''
-        INSERT INTO Consumer (ReportNumber, Age, AgeUnit, Gender)
-        VALUES (?, ?, ?, ?)
-    ''', (report_number, consumer_data.get('age',''), consumer_data.get('age_unit',''), consumer_data.get('gender','')))
-
-    # Insert data into Products table
-    for product in data['products']:
-        cursor.execute('''
-            INSERT INTO Products (ReportNumber, Role, NameBrand, IndustryCode, IndusteryName)
-            VALUES (?, ?, ?, ?, ?)
-        ''', (report_number, product['role'], product['name_brand'], product['industry_code'], product['industry_name']))
-
-    # Insert data into Outcomes table
-    for outcome in data['outcomes']:
-        cursor.execute('''
-            INSERT INTO Outcomes (ReportNumber, outcome)
-            VALUES (?, ?)
-        ''', (report_number, outcome))
-
-    # Commit changes
+        INSERT INTO FoodReactions (ReportNumber, DateCreated, DateStarted, ConsumerID) VALUES (?, ?, ?, ?)
+    ''', (record['report_number'], record['date_created'], record['date_started'], consumer_id))
     conn.commit()
+    food_reaction_id = cursor.lastrowid
+    print('---->food_reaction_id:',food_reaction_id)
+    
 
-def main():
-    # Read JSON file
-    with open('Project-3---Food-Recall-Data/food-event-0001-of-0001.json', 'r') as file:
-        json_data = json.load(file)
 
-    # Create database connection
-    conn = create_connection()
-    for data in json_data['results']:            
-        # Insert data into tables
-        insert_data(conn, data)
+    
+    # Insert into Reactions and ReactionsTypes tables
+    for reaction in record['reactions']:
+        # Check if the reaction type already exists
+        cursor.execute('SELECT ID FROM ReactionsTypes WHERE ReactionTypeName = ?', (reaction,))
+        reaction_type_id = cursor.fetchone()
+        if not reaction_type_id:
+            cursor.execute('INSERT INTO ReactionsTypes (ReactionTypeName) VALUES (?)', (reaction,))
+            reaction_type_id = cursor.lastrowid
+        else:
+            reaction_type_id = reaction_type_id[0]
+        cursor.execute('INSERT INTO Reactions (ReactionTypeID, FoodReactionID) VALUES (?, ?)', (reaction_type_id, food_reaction_id))
+    
+    # Insert into Outcomes and OutcomesTypes tables
+    for outcome in record['outcomes']:
+        # Check if the outcome type already exists
+        cursor.execute('SELECT ID FROM OutcomesTypes WHERE OutcomeTypeName = ?', (outcome,))
+        outcome_type_id = cursor.fetchone()
+        if not outcome_type_id:
+            cursor.execute('INSERT INTO OutcomesTypes (OutcomeTypeName) VALUES (?)', (outcome,))
+            outcome_type_id = cursor.lastrowid
+        else:
+            outcome_type_id = outcome_type_id[0]
+        cursor.execute('INSERT INTO Outcomes (OutcomesTypeID, FoodReactionID) VALUES (?, ?)', (outcome_type_id, food_reaction_id))
+    
+    # Insert into Products, Brands, IndustryNames, and Roles tables
+    for product in record['products']:
+        # Check if the brand already exists
+        cursor.execute('SELECT ID FROM Brands WHERE BrandName = ?', (product['name_brand'],))
+        brand_id = cursor.fetchone()
+        if not brand_id:
+            cursor.execute('INSERT INTO Brands (BrandName) VALUES (?)', (product['name_brand'],))
+            brand_id = cursor.lastrowid
+        else:
+            brand_id = brand_id[0]
+        
+        # Check if the industry name already exists
+        cursor.execute('SELECT ID FROM IndustryNames WHERE IndustryCode = ?', (product['industry_code'],))
+        industry_name_id = cursor.fetchone()
+        if not industry_name_id:
+            cursor.execute('INSERT INTO IndustryNames (IndustryCode, IndustryName) VALUES (?, ?)', (product['industry_code'], product['industry_name']))
+            industry_name_id = cursor.lastrowid
+        else:
+            industry_name_id = industry_name_id[0]
+        
+        # Check if the role already exists
+        cursor.execute('SELECT ID FROM Roles WHERE RoleName = ?', (product['role'],))
+        role_id = cursor.fetchone()
+        if not role_id:
+            cursor.execute('INSERT INTO Roles (RoleName) VALUES (?)', (product['role'],))
+            role_id = cursor.lastrowid
+        else:
+            role_id = role_id[0]
+        
+        # Insert into Products table
+        cursor.execute('''
+            INSERT INTO Products (IndustryNameID, BrandID, RoleID, FoodReactionID) VALUES (?, ?, ?, ?)
+        ''', (industry_name_id, brand_id, role_id, food_reaction_id))
 
-    # Close connection
-    conn.close()
+# Commit the changes
+conn.commit()
 
-if __name__ == '__main__':
-    main()
+# Close the connection
+conn.close()
+
+
+
+
