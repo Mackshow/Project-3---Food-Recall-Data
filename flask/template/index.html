@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Food Reactions</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -31,10 +33,10 @@
           <figure class="highcharts-figure">
             <div id="pictorial"></div>
             <p class="highcharts-description">
-                Chart showing the percentage of peanut butter reactions in males and females. The chart is using the
-                <code>pictorial</code> series type with a peanut butter jar image.
+              Chart showing the percentage of peanut butter reactions in males and females. The chart is using the
+              <code>pictorial</code> series type with a peanut butter jar image.
             </p>
-        </figure>
+          </figure>
         </div>
       </div>
       <div class="col-md-5">
@@ -42,26 +44,26 @@
       </div>
       <div class="col-md-5">
         <div id="donut"></div>
-              <div id="play-controls">
-                <button id="play-pause-button" class="fa fa-play" title="play"></button>
-                <input id="play-range" type="range" value="2000" min="2000" max="2022" />
-              </div>
-              <div id="container"></div>
-            </div>
-          </figure>
+        <div id="play-controls">
+          <button id="play-pause-button" class="fa fa-play" title="play"></button>
+          <input id="play-range" type="range" value="2000" min="2000" max="2022" />
+        </div>
+        <div id="container"></div>
       </div>
-      <div class="col-md-5">
-        <div id="bubble"></div>
-      </div>
+      </figure>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="diarrheaBars"></div>
-      </div>
+    <div class="col-md-5">
+      <div id="bubble"></div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="diarrheaBars"></div>
+    </div>
+  </div>
+  </div>
 
-  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/pictorial.js"></script>
   <script src="https://code.highcharts.com/highcharts-more.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -71,8 +73,16 @@
   <script src="./static/js/donutChart.js"></script>
   <script src="./static/js/bubbleChart.js"></script>
   <script src="./static/js/boards.js"></script>
-  <script src="./static/js/diarrheaBars.js"></script>
+  <script src="./static/js/diarrheaBars.js"></script>-->
   
+  <h5>Choose a year.:</h5>
+  <select id="selDataset" onchange="optionChanged(this.value)">
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+  </select>
+  <div id="test"></div>
+  <script src="./static/js/test.js"></script>
 
 </body>
 
