@@ -20,7 +20,8 @@ fetch('/select_top5_brands_by_year')
         name: 'Count',
         data: pieData,
         colorByPoint: true
-      }]
+      }],
+      colors: ['#FCE700', '#F8C4B4', '#f6e1ea', '#B8E8FC', '#BCE29E']
     });
   })
   .catch(error => {
