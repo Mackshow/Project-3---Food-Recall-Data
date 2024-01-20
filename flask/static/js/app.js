@@ -1,0 +1,106 @@
+
+var selectedYear = '';
+
+
+/*
+function updateChart() {
+     
+    console.log("--selectedYear -->",selectedYear );
+    
+(async () => {
+     // Fetch data from the select_ages_by_year endpoint
+     fetch(`/select_ages_by_year?year=${selectedYear}`)
+     .then(response => response.json())
+*/
+// select_ages_by_year (Reactions per industry chart)
+function load_ages_by_year() {
+
+    fetch(`/select_ages_by_year?year=${selectedYear}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            //--------------------------------------------
+
+
+            const categories = data.map(item => item[1]);
+            const counts = data.map(item => item[0]);
+
+            Highcharts.chart('container_ages_by_year', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Reactions per Industry'
+                },
+                xAxis: {
+                    categories: categories,
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Count of Reactions per Industry'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} counts</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Industries',
+                    data: counts
+                }]
+            });
+
+        })
+        .catch(error => console.error('Error fetching years:', error));
+}
+
+function refresh_charts() {
+    selectedYear = document.getElementById('yearDropdown').value;
+        console.log("--selectedYear -->",selectedYear );
+    //updateChart();
+    load_ages_by_year();
+
+}
+
+
+// Fetch data from the select_years endpoint to populate the dropdown
+function load_years() {
+    fetch('/select_years')
+        .then(response => response.json())
+        .then(data => {
+            const yearDropdown = document.getElementById('yearDropdown');
+
+            // Populate the dropdown with options
+            data.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.text = year;
+                yearDropdown.appendChild(option);
+            });
+
+            // Add event listener to the dropdown to update the chart
+            yearDropdown.addEventListener('change', refresh_charts());
+
+        })
+        .catch(error => console.error('Error fetching years:', error));
+}
+
+$(document).ready(function () {
+    // Code to be executed when the document is fully loaded
+    console.log("Document is ready!");
+    load_years();
+
+
+});
