@@ -53,9 +53,11 @@ function load_ages_by_year() {
                 plotOptions: {
                     column: {
                         pointPadding: 0.2,
-                        borderWidth: 0
+                        borderWidth: 0,
+                        colorByPoint: true,
                     }
                 },
+                colors: ['#FCE700', '#F8C4B4', '#f6e1ea', '#B8E8FC', '#BCE29E'],
                 series: [{
                     name: 'Industries',
                     data: counts
