@@ -1,75 +1,53 @@
-Highcharts.chart('container', {
-    colors: ['#FFD700', '#C0C0C0', '#CD7F32'],
-    chart: {
-        type: 'column',
-        inverted: true,
-        polar: true
-    },
-    title: {
-        text: 'Diarrhea-causing Food (TOP 5)',
-        align: 'left'
-    },
-    
-    tooltip: {
-        outside: true
-    },
-    pane: {
-        size: '85%',
-        innerSize: '20%',
-        endAngle: 270
-    },
-    xAxis: {
-        tickInterval: 1,
-        labels: {
-            align: 'right',
-            useHTML: true,
-            allowOverlap: true,
-            step: 1,
-            y: 3,
-            style: {
-                fontSize: '13px'
-            }
-        },
-        lineWidth: 0,
-        gridLineWidth: 0,
-        categories: [
-            'Norway <span class="f16"><span id="flag" class="flag no">' +
-            '</span></span>',
-            'United States <span class="f16"><span id="flag" class="flag us">' +
-            '</span></span>',
-            'Germany <span class="f16"><span id="flag" class="flag de">' +
-            '</span></span>',
-            'Austria <span class="f16"><span id="flag" class="flag at">' +
-            '</span></span>',
-            'Canada <span class="f16"><span id="flag" class="flag ca">' +
-            '</span></span>'
-        ]
-    },
-    yAxis: {
-        lineWidth: 0,
-        tickInterval: 25,
-        reversedStacks: false,
-        endOnTick: true,
-        showLastLabel: true,
-        gridLineWidth: 0
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            borderWidth: 0,
-            pointPadding: 0,
-            groupPadding: 0.15,
-            borderRadius: '50%'
-        }
-    },
-    series: [{
-        name: 'Gold medals',
-        data: [148, 113, 104, 71, 77]
-    }, {
-        name: 'Silver medals',
-        data: [113, 122, 98, 88, 72]
-    }, {
-        name: 'Bronze medals',
-        data: [124, 95, 65, 91, 76]
-    }]
-});
+function createDiarrheaGenderChart() {
+    // Fetch data from the /select_count_dia_brand_year endpoint
+    fetch(`/select_ages_by_year?year=${selectedYear}`)
+        .then(response => response.json())
+        .then(data => {
+            // Extracting industry names, male counts, and female counts
+            var industryNames = data.map(item => item[2]);
+            var maleCounts = data.map(item => item[0]);
+            var femaleCounts = data.map(item => item[1]);
+
+            // Create a Highcharts horizontal bar chart
+            Highcharts.chart('diarrheaBars', {
+                chart: {
+                    type: 'column',
+                    inverted: true
+                },
+                colors: [  '#CD7F32'],
+                
+                title: {
+                    text: 'Diarrhea Reaction by Industry and Gender'
+                },
+                xAxis: {
+                    categories: industryNames,
+                    title: {
+                        text: 'Industry'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Count'
+                    }
+                },
+                legend: {
+                    reversed: true
+                },
+                plotOptions: {
+                    series: {
+                        stacking: 'normal'
+                    }
+                },
+                series: [{
+                    name: 'Male',
+                    data: maleCounts,
+                    stack: 'gender'
+                }, {
+                    name: 'Female',
+                    data: femaleCounts,
+                    stack: 'gender'
+                }]
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+};
