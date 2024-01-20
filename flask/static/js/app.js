@@ -22,8 +22,8 @@ function load_ages_by_year() {
             //--------------------------------------------
 
 
-            const categories = data.map(item => item[1]);
-            const counts = data.map(item => item[0]);
+            var categories = data.map(item => item[1]);
+            var counts = data.map(item => item[0]);
 
             Highcharts.chart('container_ages_by_year', {
                 chart: {
@@ -62,6 +62,7 @@ function load_ages_by_year() {
                     name: 'Industries',
                     data: counts
                 }]
+               
             });
 
         })
@@ -72,7 +73,8 @@ function refresh_charts() {
     selectedYear = document.getElementById('yearDropdown').value;
         console.log("--selectedYear -->",selectedYear );
     //updateChart();
-    load_ages_by_year();
+    load_ages_by_year()
+    createDiarrheaGenderChart();
 
 }
 
