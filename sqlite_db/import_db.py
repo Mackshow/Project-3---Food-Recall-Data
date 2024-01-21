@@ -9,7 +9,7 @@ cursor = conn.cursor()
 with open('food-event-0001-of-0001.json', 'r') as json_file:
     data = json.load(json_file)
  
-default_consumer={"consumer": {"age": "0","age_unit": "-", "gender": "-" }} #set default value for each age, age_unit, and gender
+default_consumer={"consumer": {"age": "0","age_unit": "-", "gender": "-" }} #set default value for each age, age_unit, and gender instead null
 # Loop through each record in the JSON data
 for record in data['results']:
     print('record:', record)
@@ -40,7 +40,7 @@ for record in data['results']:
     ''', (record['report_number'], record['date_created'], record['date_started'], consumer_id))
     conn.commit()
     food_reaction_id = cursor.lastrowid
-    print('---->food_reaction_id:',food_reaction_id)
+    print('---->food_reaction_id:',food_reaction_id) #debbuging
     
 
 
