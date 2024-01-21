@@ -9,7 +9,7 @@ cursor = conn.cursor()
 with open('food-event-0001-of-0001.json', 'r') as json_file:
     data = json.load(json_file)
  
-default_consumer={"consumer": {"age": "0","age_unit": "-", "gender": "-" }}
+default_consumer={"consumer": {"age": "0","age_unit": "-", "gender": "-" }} #set default value for each age, age_unit, and gender
 # Loop through each record in the JSON data
 for record in data['results']:
     print('record:', record)
@@ -17,7 +17,7 @@ for record in data['results']:
     consumer_id = None
     if record.get('consumer', default_consumer ):
         cursor.execute(f'SELECT ID FROM Consumers WHERE Age =? and AgeUnit=? and Gender = ?',
-                        (record['consumer'].get('age',''), record['consumer'].get('age_unit',''), record['consumer'].get('gender',''),))
+                        (record['consumer'].get('age',''), record['consumer'].get('age_unit',''), record['consumer'].get('gender',''),)) #set default value empty space instead of null
         result = cursor.fetchone()
         if result:
             print('consumer active selection : ', result) #debugging
