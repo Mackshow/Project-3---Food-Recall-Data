@@ -1,13 +1,6 @@
 # import necessary libraries
 import json
-import numpy as np
-import pandas as pd
-
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
-
-from flask import Flask, render_template, request, jsonify, redirect
+from flask import Flask, render_template, request
 import sqlite3
 
 ################################################
@@ -19,7 +12,7 @@ app = Flask(__name__)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("test.html")
 
 #***********************API endpoints*********************************
 #connect to database
@@ -27,7 +20,7 @@ def getcur():
     conn = sqlite3.connect('database/foodReaction.db')        
     return conn
 
-#round the age to a whole number
+#Round the age to a whole number
 def round_age():
     conn = getcur()
     cursor = conn.cursor()    
@@ -36,8 +29,8 @@ def round_age():
     conn.commit()
     conn.close()
 
-
-#select year from 2000 till 2023
+#-----------------------------------------------------
+#select year from 2000 till 2023---dropdown menu
 @app.route("/select_years")
 def select_years ():    
     conn = getcur()
@@ -56,21 +49,27 @@ def select_years ():
     
     return json.dumps(json_data)
 
-#donut chart selection
+#---------------------------------------------------------
+#count of food reactions by industry and age---Age Chart
 @app.route("/select_ages_by_year")
 def select_ages_by_year ():
     year = request.args.get('year', '2000')    
+    age = request.args.get('age', '20')    
     conn = getcur()
     cursor = conn.cursor()    
     # Execute the SQLite query
     sql=f"""
     select  count(*) cnt,
-        i.IndustryName, c.Age    
+        i.IndustryName
     from 
     Consumers c inner join  FoodReactions f on f.consumerID = c.ID
     inner join Products p on p.FoodReactionID =f.ID
     inner join IndustryNames i on i.ID = p.IndustryNameID 
-    where substr(DateStarted, 1, 4) = '{year}' group by Age
+    where not i.IndustryName = 'Cosmetics'
+        and age= {age}
+    group by i.IndustryName
+    order by cnt desc
+    LIMIT 10
     """
     cursor.execute(sql)
  
@@ -84,135 +83,8 @@ def select_ages_by_year ():
     conn.close()    
     return json.dumps(json_data)
 
-"""
-        cursor.execute(sql)
-        row_headers = [x[0] for x in cur.description]  
-        rv = cursor.fetchall()
-        json_data = []
-        for result in rv:
-            json_data.append(dict(zip(row_headers, result)))
-        rr = {
-            'code': 20000,
-            'data': json_data
-        }
-"""
-    
-# (top 5 food industries that have most reactions) bubble chart selection
-@app.route("/select_top5_brand_fir_by_year")
-def select_top5_fir_brand_by_year ():
-
-    year = request.args.get('year', '2000')
-    conn = getcur()
-    cursor = conn.cursor()    
-    # Execute the SQLite query
-    sql=f"""
-    select  count(*) cnt,
-        i.IndustryName, b.BrandName, rt.ReactionTypeName
-    from
-    FoodReactions f 
-    inner join Reactions r on f.ID = r.FoodReactionID
-    inner join ReactionsTypes rt on r.ReactionTypeID = rt.ID 
-    inner join Products p on p.FoodReactionID =f.ID
-    inner join IndustryNames i on i.ID = p.IndustryNameID
-    inner join Brands b on b.ID = p.BrandID
-    where substr(f.DateStarted, 1, 4) = '{year}'
-        and not i.IndustryName = 'Cosmetics'
-    group by i.IndustryName, b.BrandName, rt.ReactionTypeName
-    order by cnt desc
-    """ 
-    sql=f"""
-    select  count(*) cnt,
-        i.IndustryName, b.BrandName, rt.ReactionTypeName
-    from
-    FoodReactions f 
-    inner join Reactions r on f.ID = r.FoodReactionID
-    inner join ReactionsTypes rt on r.ReactionTypeID = rt.ID 
-    inner join Products p on p.FoodReactionID =f.ID
-    inner join IndustryNames i on i.ID = p.IndustryNameID
-    inner join Brands b on b.ID = p.BrandID
-    where   not i.IndustryName = 'Cosmetics'
-    group by i.IndustryName, b.BrandName, rt.ReactionTypeName
-    order by cnt desc
-    """ 
-    #----------------------
-   
-    cursor.execute(sql)
- 
-    # Fetch all the results
-    results = cursor.fetchall()
-    json_data=[]    
-    for row in results:        
-        json_data.append([row[0],row[1],row[2],row[3]])
-
-    # Close the connection
-    conn.close()    
-    return json.dumps(json_data)
-
-
-# (count by food reations by year  ) board chart 
-@app.route("/select_count_by_food_reactions_by_year")
-def select_count_by_food_reactions_by_year ():
-
-    year = request.args.get('year', '2000')    
-    conn = getcur()
-    cursor = conn.cursor()    
-    # Execute the SQLite query
-    sql=f"""
-    select  count(*) cnt,  rt.ReactionTypeName
-    from
-
-    FoodReactions f 
-    inner join Reactions r on f.ID = r.FoodReactionID
-        inner join ReactionsTypes rt on r.ReactionTypeID = rt.ID 
-         
-    where substr(f.DateStarted, 1, 4) = '{year}' 
-    group by  rt.ReactionTypeName
-    order by cnt desc
-    """ 
-    #----------------------   
-    cursor.execute(sql)
- 
-    # Fetch all the results
-    results = cursor.fetchall()
-    json_data=[]    
-    for row in results:        
-        json_data.append([row[0],row[1] ])
-
-    # Close the connection
-    conn.close()    
-    return json.dumps(json_data)
-
-# (total number of food reations by year  ) board chart
-@app.route("/select_total_food_reactions_by_year")
-def select_total_food_reactions_by_year ():
-
-    year = request.args.get('year', '2000')    
-    conn = getcur()
-    cursor = conn.cursor()    
-    # Execute the SQLite query
-    sql=f"""
-    select  count(*) cnt 
-    from   FoodReactions f 
-    inner join Reactions r on f.ID = r.FoodReactionID
-        inner join ReactionsTypes rt on r.ReactionTypeID = rt.ID  
-    where substr(f.DateStarted, 1, 4) = '{year}'  
-    """ 
-    #----------------------   
-    cursor.execute(sql)
- 
-    # Fetch all the results
-    results = cursor.fetchall()
-    json_data=[]    
-    for row in results:        
-        json_data.append([row[0][0] ])
-
-    # Close the connection
-    conn.close()    
-    return json.dumps(json_data)
-
-
-
-# (total number of hosp by year) board chart
+#-----------------------------------------------------------
+# Top 5 Outcomes of Food reactions by year---Outcomes Chart
 @app.route("/select_by_outcomes_by_year")
 def select_by_outcomes_by_year ():
 
@@ -227,8 +99,9 @@ def select_by_outcomes_by_year ():
         inner join OutcomesTypes ot on o.OutcomesTypeID = ot.ID  
     where substr(f.DateStarted, 1, 4) = '{year}'  
     group by OutcomeTypeName order by cnt desc 
+    limit 5
     """ 
-    #----------------------   
+      
     cursor.execute(sql) 
     # Fetch all the results
     results = cursor.fetchall()
@@ -240,47 +113,22 @@ def select_by_outcomes_by_year ():
     conn.close()    
     return json.dumps(json_data)
 
-
-# (total number of hosp by year  ) board chart
-@app.route("/select_count_hosp_by_year")
-def select_count_hosp_by_year ():
+#---------------------------------------------------------------------------------------------
+# Top Brand names that have most reactions---Brands Pie Chart
+@app.route("/select_brands_by_year")
+def select_brands_by_year ():
 
     year = request.args.get('year', '2000')    
+    limit  = request.args.get('limit', '')    
     conn = getcur()
     cursor = conn.cursor()    
     # Execute the SQLite query
-    sql=f"""
-    select  count(*) cnt  
-    from   FoodReactions f 
-    inner join Outcomes o on f.ID = o.FoodReactionID
-        inner join OutcomesTypes ot on o.OutcomesTypeID = ot.ID  
-    where substr(f.DateStarted, 1, 4) = '{year}'  and OutcomeTypeName='Hospitalization'
+    if len(limit )>0:
+        limit ='LIMIT '+limit 
     
-    """ 
-    #----------------------   
-    cursor.execute(sql) 
-    # Fetch all the results
-    results = cursor.fetchall()
-    json_data=[]    
-    for row in results:        
-        json_data.append([row[0][0]  ])
-
-    # Close the connection
-    conn.close()    
-    return json.dumps(json_data)
-
-
-# (top 5 brand names that have most reactions  )
-@app.route("/select_top5_brands_by_year")
-def select_top5_brands_by_year ():
-
-    year = request.args.get('year', '2000')    
-    conn = getcur()
-    cursor = conn.cursor()    
-    # Execute the SQLite query
     sql=f"""
     select  count(*) cnt,
-        i.IndustryName, b.BrandName, rt.ReactionTypeName
+         b.BrandName 
     from
     FoodReactions f 
     inner join Reactions r on f.ID = r.FoodReactionID
@@ -290,11 +138,11 @@ def select_top5_brands_by_year ():
     inner join Brands b on b.ID = p.BrandID
     where substr(f.DateStarted, 1, 4) = '{year}'
         and not i.IndustryName = 'Cosmetics'
-    group by i.IndustryName, b.BrandName, rt.ReactionTypeName
+        and not b.BrandName = 'EXEMPTION 4'
+    group by  b.BrandName 
     order by cnt desc
+    {limit}
     """ 
- 
-    #----------------------
    
     cursor.execute(sql)
  
@@ -302,17 +150,13 @@ def select_top5_brands_by_year ():
     results = cursor.fetchall()
     json_data=[]    
     for row in results:        
-        json_data.append([row[0],row[1],row[2],row[3]])
-
+        json_data.append([row[0],row[1]])
     # Close the connection
     conn.close()    
     return json.dumps(json_data)
 
-
-
-
-
-#Top count brand names that cause diarrhea
+#---------------------------------------------------------------------
+#Top count brand names that cause diarrhea per Gender---Diarhea Chart
 @app.route("/select_count_dia_brand_year")
 def select_count_dia_brand_year():
 
@@ -331,9 +175,12 @@ def select_count_dia_brand_year():
     inner join ReactionsTypes rt on r.ReactionTypeID = rt.ID 
     inner join Products p on p.FoodReactionID =f.ID
     inner join IndustryNames i on i.ID = p.IndustryNameID    
-    inner join Consumers c on c.ID = f.consumerID 
-    and rt.ReactionTypeName='Diarrhoea'         
-    group by   i.IndustryName          ;
+    inner join Consumers c on c.ID = f.consumerID
+    where substr(f.DateStarted, 1, 4) = '{year}' 
+        and rt.ReactionTypeName='Diarrhoea'         
+    group by  i.IndustryName
+    
+    limit 10;
    
 """
     cursor.execute(sql)
@@ -342,62 +189,14 @@ def select_count_dia_brand_year():
     results = cursor.fetchall()
     json_data=[]    
     for row in results:        
-        json_data.append([row[0],row[1],row[2]  ])
+        json_data.append([row[0],row[1],row[2]])
     data=json_data
     # Close the connection
     conn.close()    
-    #return json.dumps(json_data)
-    labels = [x[2] for x in data]
-    male_count = [x[0] for x in data]
-    female_count = [x[1] for x in data]
-    return render_template('diarrheaBars.html', labels=labels, male_count=male_count, female_count=female_count)
-
-
-
-
-
-#Top count brand names that cause diarrhea
-@app.route("/select_count_by_reactions_year")
-def select_count_by_reactions_year():
-
-    year = request.args.get('year', '2000')    
-    conn = getcur()
-    cursor = conn.cursor()    
-    # Execute the SQLite query
-    sql=f"""
-    select  count(*) cnt,
-        ReactionTypeName 
-    from
-    FoodReactions f 
-    inner join Reactions r on f.ID = r.FoodReactionID
-    inner join ReactionsTypes rt on r.ReactionTypeID = rt.ID 
-    inner join Products p on p.FoodReactionID =f.ID
-    inner join IndustryNames i on i.ID = p.IndustryNameID
-    inner join Brands b on b.ID = p.BrandID
-    where substr(f.DateStarted, 1, 4) = '{year}'
-         
-    group by  ReactionTypeName
     
-    order by cnt desc
-    """  
-    #----------------------
-   
-    cursor.execute(sql)
- 
-    # Fetch all the results
-    results = cursor.fetchall()
-    json_data=[]    
-    for row in results:        
-        json_data.append([row[0],row[1] ])
-
-    # Close the connection
-    conn.close()    
     return json.dumps(json_data)
-
-
-
+    
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=80)
-    #kkk()
-#    select_years()
+    
