@@ -159,7 +159,6 @@ def select_brands_by_year ():
 #Top count brand names that cause diarrhea per Gender---Diarhea Chart
 @app.route("/select_count_dia_brand_year")
 def select_count_dia_brand_year():
-
     year = request.args.get('year', '2000')    
     conn = getcur()
     cursor = conn.cursor()    
