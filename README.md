@@ -1,6 +1,3 @@
-Sure, here's your README file with grammar corrections and improved phrasing:
-
----
 
 # Food Event Data Analysis
 
