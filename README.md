@@ -9,7 +9,7 @@ In this project, we analyzed a dataset related to food events. Our goal was to u
 
 - Michael Moore
 - Lara Berry
-- Anthony H
+- Anthony Hembree
 - Daniel Morgan
 - Alexander 
 
