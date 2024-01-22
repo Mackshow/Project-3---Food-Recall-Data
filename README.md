@@ -12,7 +12,8 @@ In this project, we analyzed a dataset related to food events. Our goal was to u
 - Anthony Hembree
 - Daniel Morgan
 - Alexander 
-
+- Antione Reed
+  
 ## Data Source
 
 The dataset for this project was obtained from "https://open.fda.gov/data/downloads/". It contains information about various food events, including the type of food, industry code, consumer age, consumer gender, negative reactions, and overall outcomes from the consumed food and other relevant details.
