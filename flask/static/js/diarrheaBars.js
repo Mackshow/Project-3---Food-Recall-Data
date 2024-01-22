@@ -1,8 +1,9 @@
 function createDiarrheaGenderChart() {
     // Fetch data from the /select_count_dia_brand_year endpoint
-    fetch(`/select_ages_by_year?year=${selectedYear}`)
+    fetch(`/select_count_dia_brand_year?year=${selectedYear}`)
         .then(response => response.json())
         .then(data => {
+            console.log(`/select_count_dia_brand_year?year=${selectedYear}`,data) //debugging
             // Extracting industry names, male counts, and female counts
             var industryNames = data.map(item => item[2]);
             var maleCounts = data.map(item => item[0]);
@@ -14,7 +15,7 @@ function createDiarrheaGenderChart() {
                     type: 'column',
                     inverted: true
                 },
-                colors: [  '#CD7F32'],
+                colors: [ '#B8E8FC', '#F8C4B4'],
                 
                 title: {
                     text: 'Diarrhea Reaction by Industry and Gender'
