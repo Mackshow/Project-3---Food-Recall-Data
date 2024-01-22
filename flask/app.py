@@ -12,7 +12,7 @@ app = Flask(__name__)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("test.html")
+    return render_template("index.html")
 
 #***********************API endpoints*********************************
 #connect to database
