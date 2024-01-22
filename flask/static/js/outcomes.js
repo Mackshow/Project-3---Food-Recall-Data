@@ -20,7 +20,7 @@ function outcomesChart() {
                 },
 
                 title: {
-                    text: 'Outcomes from Food Reactions (Top 5)'
+                    text: 'Outcomes of Food Reactions (Top 5)'
                 },
 
                 xAxis: {
