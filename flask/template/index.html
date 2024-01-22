@@ -5,17 +5,12 @@
     <title>Food Reactions</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
+
     <!-- Include Highcharts library -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="./static/js/outcomes.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./static/js/app.js"></script>
-    <script src="./static/js/brands.js"></script>
-    <script src="./static/js/diarrheaBars.js"></script>
-    
 
 </head>
 
@@ -29,50 +24,75 @@
             </div>
         </div>
 
-        <!-- topRowData-->
         <div class="row">
             <!-- Years DropDown menu-->
             <div class="col-md-4">
                 <div class="well">
                     <label for="yearDropdown">Select a Year:</label>
-                    <select id="yearDropdown"></select>
+                    <select id="yearDropdown" onchange="refresh_charts()"></select>
                 </div>
             </div>
-            <!-- Reactions per industry Bar Graph-->
+
             <div class="col-md-4">
-                <div class="well" style="width: 750px; height: 450px;">
-                    <div id="container_ages_by_year" style="width: 700px; height: 400px;"></div>
-                    <div id="play-controls">
-                        <button id="play-pause-button" class="fa fa-play" title="play"></button>
-                        <input id="play-range" type="range" value="2000" min="2000" max="2022" />
-                    </div>
+                <div class="well">
+                    <p>
+                        Explore Food Reactions Stats: Uncover trends in dietary responses across ages and genders throughout the year. Discover how preferences evolve, shaping our understanding of nutritional choices. An insightful journey into the dynamic relationship between individuals, diets, and seasons awaits you!
+ 
+ 
+                    </p>
                 </div>
             </div>
         </div>
 
-        <!-- bottomRowData-->
         <div class="row">
-            <!-- diarrhea-->
+            <!-- Outcomes Bar Graph-->
             <div class="col-md-4">
-                <div class="well" style="width: 550px; height: 450px;">
-                    <div id="diarrheaBars" style="width: 700px; height: 400px;"></div>
-                
-                </div>
-            </div>
-            <!-- Outcomes-->
-            <div class="col-md-4">
-                <div class="well"  style="width: 550px; height: 450px;">
-                    <div id="outcomesChart" style="width: 500px; height: 400px;"></div>
+                <div class="well" style="width: 650px; height: 450px;">
+
+                    <div id="outcomesChart" style="width: 600px; height: 400px;"></div>
 
                 </div>
             </div>
         </div>
-    <!-- Top brands-->
+
+        <div class="row">
+            <!-- Diarrhea by Gender Chart-->
+            <div class="col-md-4">
+                <div class="well" style="width: 650px; height: 450px;">
+                    <div id="diarrheaBars" style="width: 600px; height: 400px;"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Reaction by Industry and Age Chart-->
+            <div class="col-md-4">
+                <div class="well" style="width: 650px; height: 450px;">
+                    <div id="container_ages_by_year" style="width: 600px; height: 400px;"></div>
+                    <div id="play-controls">
+                        <input id="play-range" type="range" value="30" min="1" max="80" />
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Top Brands Chart-->
         <div class="col-md-4">
+            <span> select count limit: </span>
+            <select id="topBrandsChartSelector" onchange="handleBrandSelection()">
+            </select>
+
             <div class="well" style="width: 550px; height: 450px;">
                 <div id="topBrandsChart" style="width: 500px; height: 400px;"></div>
             </div>
         </div>
     </div>
+    <script src="./static/js/outcomes.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/js/brands.js"></script>
+    <script src="./static/js/diarrheaBars.js"></script>
+
 </body>
-    
