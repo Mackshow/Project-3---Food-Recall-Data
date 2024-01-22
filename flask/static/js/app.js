@@ -96,7 +96,7 @@ function reactionsPerIndustryChart() {
                     type: 'column'
                 },
                 title: {
-                    text: 'Reactions per Industry'
+                    text: 'Reactions per Food Industry'
                 },
                 xAxis: {
                     categories: categories,
