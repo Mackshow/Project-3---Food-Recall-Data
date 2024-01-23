@@ -1,0 +1,99 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Reactions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Include Highcharts library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- topBox-->
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Food Reactions Data</h1>
+                <p>Explore the Most Common Food Reactions across Different Food Industries</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Years DropDown menu-->
+            <div class="col-md-4">
+                <div class="well">
+                    <label for="yearDropdown">Select a Year:</label>
+                    <select id="yearDropdown" onchange="refresh_charts()"></select>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">
+                    <p>
+                        
+                    Explore insightful data that delves into the various types of food reactions. Uncover trends in the prevalence of adverse reactions among different food industries, and their top brand products. Learn how the U.S. consumers were adversely affected by food over time, and across different age ranges and gender. 
+
+ 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Outcomes Bar Graph-->
+            <div class="col-md-4">
+                <div class="well" style="width: 650px; height: 450px;">
+
+                    <div id="outcomesChart" style="width: 600px; height: 400px;"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Diarrhea by Gender Chart-->
+            <div class="col-md-4">
+                <div class="well" style="width: 650px; height: 450px;">
+                    <div id="diarrheaBars" style="width: 600px; height: 400px;"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Reaction by Industry and Age Chart-->
+            <div class="col-md-4">
+                <div class="well" style="width: 650px; height: 450px;">
+                    <div id="container_ages_by_year" style="width: 600px; height: 400px;"></div>
+                    <div id="play-controls">
+                        <input id="play-range" type="range" value="30" min="1" max="80" />
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Top Brands Chart-->
+        <div class="col-md-4">
+            <span> select count limit: </span>
+            <select id="topBrandsChartSelector" onchange="handleBrandSelection()">
+            </select>
+
+            <div class="well" style="width: 550px; height: 450px;">
+                <div id="topBrandsChart" style="width: 500px; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./static/js/outcomes.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/js/brands.js"></script>
+    <script src="./static/js/diarrheaBars.js"></script>
+
+</body>
